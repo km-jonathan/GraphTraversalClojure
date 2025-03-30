@@ -1,44 +1,50 @@
-# graph-traversal-clojure
+# Graph Traversal (Clojure)
 
-FIXME: description
+A Clojure implementation for graph simple calculations
 
-## Installation
+## Description
 
-Download from http://example.com/FIXME.
+1. Create a randomly generated a simple directed graph
+2. Calculate the shortest path between 2 randomly selected vertices with Dijkstra's algorithm
+3. Calculate distance properties of the graph (radius and diameter)
+4. Calculate the eccentricity of a randomly selected vertex
 
-## Usage
+## Getting Started
 
-FIXME: explanation
+### Executing program
 
-    $ java -jar graph-traversal-clojure-0.1.0-standalone.jar [args]
+* How to run the program
 
-## Options
+There are two options to generate a graph
 
-FIXME: listing of options this app accepts.
+Option 1 - pass in two values as arguments
 
-## Examples
+    (N - size of generated graph)
+    
+    (S - sparseness (number of directed edges actually; from N-1 (inclusive) to N(N-1) (inclusive))) 
 
-...
+  clj -M -m graph-traversal-clojure.core \<N\> \<S\> (eg. clj -M -m graph-traversal-clojure.core 5 8)
+  
+Option 2 - simply do "clj -M -m graph-traversal-clojure.core" [if there are less than 2 arguments being put in, the terminal will ask for the user input]
+  
+  clj -M -m graph-traversal-clojure.core
 
-### Bugs
+<img width="401" alt="image" src="https://github.com/user-attachments/assets/004304f9-bef7-4b8a-85c5-1711dff1e7ac" />
 
-...
+Once a graph is successfully created, all values will be calculated and displayed automatically 
 
-### Any Other Sections
-### That You Think
-### Might be Useful
+<img width="523" alt="image" src="https://github.com/user-attachments/assets/0ebce4cb-7817-43ba-b0fd-a0f696c66ee5" />
 
-## License
+## Remarks
 
-Copyright © 2025 FIXME
+This project is converted from a c# / .net implementation with the help of some AI tools.
 
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
+The c# / .net implementation can be found here: https://github.com/km-jonathan/GraphTraversal
 
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+## Authors
+
+Jonathan Leung  
+
+## Version History
+
+1.0 - Initial Release
