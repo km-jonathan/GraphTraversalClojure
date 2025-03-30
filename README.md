@@ -41,6 +41,10 @@ This project is converted from a c# / .net implementation with the help of some 
 
 The c# / .net implementation can be found here: https://github.com/km-jonathan/GraphTraversal
 
+## Feedback
+
+Looking forward to any feedback on how to optimise the code
+
 ## Authors
 
 Jonathan Leung  
